@@ -6,12 +6,14 @@ using UnityEngine.Events;
 
 public class TriggerZone : MonoBehaviour
 {
-    private string _targetTag;
     public UnityEvent<GameObject> onEnterEvent;
+    
+    [SerializeField]
+    private string _targetTag;
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.gameObject.tag == _targetTag)
+        if (other.gameObject.CompareTag(_targetTag))
         {
             onEnterEvent.Invoke(other.gameObject);
         }
