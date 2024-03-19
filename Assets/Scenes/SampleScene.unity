@@ -1816,6 +1816,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Push Button
       objectReference: {fileID: 0}
+    - target: {fileID: 5419331889293473514, guid: 76f3439a0ae796e4b81bee3f91f888ee,
+        type: 3}
+      propertyPath: m_InteractionLayers.m_Bits
+      value: 2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -4252,7 +4257,7 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 4294967295
   m_InteractionLayers:
-    m_Bits: 4294967295
+    m_Bits: 2
   m_AttachTransform: {fileID: 1213258514}
   m_KeepSelectedTargetValid: 1
   m_DisableVisualsWhenBlockedInGroup: 1
@@ -8209,6 +8214,12 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1640552119}
   m_PrefabAsset: {fileID: 0}
+--- !u!95 &1640552121 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 9546954, guid: 820591594dcfa124d8a9c5d016d6c22c,
+    type: 3}
+  m_PrefabInstance: {fileID: 1640552119}
+  m_PrefabAsset: {fileID: 0}
 --- !u!114 &1698767429
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8545,7 +8556,7 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 4294967295
   m_InteractionLayers:
-    m_Bits: 4294967295
+    m_Bits: 2
   m_AttachTransform: {fileID: 1315012002}
   m_KeepSelectedTargetValid: 1
   m_DisableVisualsWhenBlockedInGroup: 1
@@ -9661,6 +9672,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 549aa41f2fbcd364184e100159ea6be3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  animator: {fileID: 1640552121}
 --- !u!1001 &2061146553
 PrefabInstance:
   m_ObjectHideFlags: 0
