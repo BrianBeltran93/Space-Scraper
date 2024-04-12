@@ -13,12 +13,6 @@ public class AddScore : MonoBehaviour
 
     private void AddButtonPress()
     {
-        RealmController.Instance.IncreaseScore(1);
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
+        //RealmController.Instance.IncreaseScore(1);
     }
 }
