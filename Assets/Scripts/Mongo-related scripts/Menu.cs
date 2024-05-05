@@ -13,12 +13,9 @@ using TMPro;
 public class Menu : MonoBehaviour
 {
     [SerializeField] private ActionBasedController rightController;
-    [SerializeField] private Button newGameBtn;
     [SerializeField] private GameObject enterNamePanel;
     [SerializeField] private TMP_InputField inputField;
     [SerializeField] private GameObject newGamePanel;
-    [SerializeField] private LineRenderer rend;
-    [SerializeField] private GameObject xrOrigin;
     [SerializeField] private GameObject keyboard;
 
     public void ActivateNameMenu()

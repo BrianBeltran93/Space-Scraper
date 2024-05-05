@@ -13,9 +13,9 @@ public class LineRendererSettings : MonoBehaviour
     [SerializeField] private Button newGameBtn;
     [SerializeField] private Button submitBtn;
     [SerializeField] private Button loadGameBtn;
-    [SerializeField] private GameObject xrOrigin;
-    [SerializeField] private ActionBasedController rightController;
-    [SerializeField] private Canvas menu;
+    [SerializeField] private Button[] saveFileBtns;
+    [SerializeField] private Button startGameBtn;
+    [SerializeField] private Button deleteSaveFileBtn;
     
     private Vector3[] _points;
     
@@ -49,6 +49,38 @@ public class LineRendererSettings : MonoBehaviour
             else if (hit.transform.name == "LoadGameButton")
             {
                 loadGameBtn.onClick.Invoke();
+            }
+            else if (hit.transform.name == "FileOne")
+            {
+                saveFileBtns[0].onClick.Invoke();
+            }
+            else if (hit.transform.name == "FileTwo")
+            {
+                saveFileBtns[1].onClick.Invoke();
+            }
+            else if (hit.transform.name == "FileThree")
+            {
+                saveFileBtns[2].onClick.Invoke();
+            }
+            else if (hit.transform.name == "FileFour")
+            {
+                saveFileBtns[3].onClick.Invoke();
+            }
+            else if (hit.transform.name == "FileFive")
+            {
+                saveFileBtns[4].onClick.Invoke();
+            }
+            else if (hit.transform.name == "FileSix")
+            {
+                saveFileBtns[5].onClick.Invoke();
+            }
+            else if (hit.transform.name == "StartGameButton")
+            {
+                startGameBtn.onClick.Invoke();
+            }
+            else if (hit.transform.name == "DeleteSaveButton")
+            {
+                deleteSaveFileBtn.onClick.Invoke();
             }
         }
         else

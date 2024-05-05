@@ -11,15 +11,14 @@ using UnityEngine.XR.Interaction.Toolkit.Samples.StarterAssets;
 
 public class Submit : MonoBehaviour
 {
-    [SerializeField] private Button submitBtn;
     [SerializeField] private ActionBasedController rightController;
-    [SerializeField] private LineRenderer rend;
     [SerializeField] private new TMP_InputField name;
     [SerializeField] private GameObject xrOrigin;
     [SerializeField] private GameObject menu;
     [SerializeField] private GameObject keyboard;
     [SerializeField] private TMP_Text playerName;
     [SerializeField] private TMP_Text buttonCounter;
+    [SerializeField] private GameObject rightRaycast;
 
     public void SubmitData()
     {
@@ -46,6 +45,7 @@ public class Submit : MonoBehaviour
         keyboard.SetActive(false);
         xrOrigin.GetComponent<DynamicMoveProvider>().enabled = true;
         xrOrigin.GetComponent<ActionBasedSnapTurnProvider>().enabled = true;
+        rightRaycast.SetActive(false);
         gameObject.SetActive(false);
     }
 }
